@@ -31,7 +31,7 @@ import gremlin.scala._
 From here, the scala friendly function signatures provided from `gremlin-scala` are available on the driver-created
 `GraphTraversalSource`.
 
-Refer to [GremlinScalaApp.scala](./src/main/scala/GremlinScalaApp.scala) for a very basic example of how to accomplish
+Refer to [GremlinScalaApp.scala](./src/main/scala/am/tolbert/gremlin/GremlinScalaApp.scala) for a very basic example of how to accomplish
 this.
 
 ## Workarounds needed to successfully build project
@@ -40,10 +40,10 @@ There are a few workarounds needed to use TinkerPop and the dse driver with scal
 
 1. jBCrypt, a dependency of TinkerPop, does not resolve with default SBT settings.  This will be fixed in a future
 TinkerPop release (see: [TINKERPOP-1633](https://issues.apache.org/jira/browse/TINKERPOP-1633)), for now [declaring
-jitpack as a resolver](./build.sbt#21) can be used as a workaround.
+jitpack as a resolver](./build.sbt#L21) can be used as a workaround.
 
 2. There is a weakness in the scala compiler that prevents code from using `DseCluster` from compiling.  To work around
-this, [`-Ybreak-cycles` needs to be added to scalacOptions](./build.sbt#9).  
+this, [`-Ybreak-cycles` needs to be added to scalacOptions](./build.sbt#L9).  
 See [JAVA-1252](https://datastax-oss.atlassian.net/browse/JAVA-1252) for more detail.
 
 ## Setting up a Local DSE Node for Testing
@@ -72,7 +72,7 @@ is to use [ccm](https://github.com/pcmanus/ccm), but you may use an alternative 
 ## Running the Example
 
 To build and run the example, simply execute ```./sbt run``` which will compile and run
-[GremlinScalaApp.scala](./src/main/scala/GremlinScalaApp.scala).  If everything goes well, the output should look like:
+[GremlinScalaApp.scala](./src/main/scala/am/tolbert/gremlin/GremlinScalaApp.scala).  If everything goes well, the output should look like:
 
 ```
 gremlin-scala-dse-example $ ./sbt run
