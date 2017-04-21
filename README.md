@@ -49,7 +49,7 @@ See [JAVA-1252](https://datastax-oss.atlassian.net/browse/JAVA-1252) for more de
 ## Setting up a Local DSE Node for Testing
 
 To run the tests, you first need to set up a local DSE node that is preconfigured.  The simplest way to accomplish this
-is to use [ccm](https://github.com/pcmanus/ccm), but you may use an alternative means if you like.  The following steps demonstrate how to set up a single-node DSE ccm cluster with authentication:
+is to use [ccm](https://github.com/pcmanus/ccm), but you may use an alternative means if you like.  The following steps demonstrate how to set up a single-node DSE ccm cluster with graph enabled:
 
 1. Create the ccm cluster (with username and password being that which you use to download DSE normally):
 
