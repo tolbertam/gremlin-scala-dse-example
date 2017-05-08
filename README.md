@@ -1,5 +1,7 @@
 # DataStax Enterprise Graph with gremlin-scala Example
 
+**Note**: *This example has been superceded by the dse-graph example in [gremlin-scala-examples](https://github.com/mpollmeier/gremlin-scala-examples).  This example is left in tact, but in the future it may become out of date, refer to [gremlin-scala-examples](https://github.com/mpollmeier/gremlin-scala-examples) for up to date examples.*
+
 This repository provides a basic example of using [gremlin-scala](https://github.com/mpollmeier/gremlin-scala) and 
 the [Java driver for DataStax Enterprise](https://github.com/datastax/java-dse-driver) to interact with a DataStax
 Enterprise Graph.
